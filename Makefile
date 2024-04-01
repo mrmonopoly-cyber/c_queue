@@ -1,7 +1,7 @@
 C_FLAGS = -Wall -Wextra -fsanitize=address -g
 CC = gcc
 
-c_queue_src_path = $(or $(C_QUEUE_PATH), .)
+c_queue_src_path := $(or $(C_QUEUE_ROOT), .)
 
 c_queue.c = $(c_queue_src_path)/c_queue.c
 
